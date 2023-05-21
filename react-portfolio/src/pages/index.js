@@ -1,7 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image';
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub, AiOutlineLink } from 'react-icons/ai'
-import img1 from '../images/scentimental-cover.png';
+import img1 from '../../public/images/scentimental-cover.png';
 
 export default function Home() {
   return (
@@ -47,18 +48,19 @@ export default function Home() {
           </div>
           <div>
             <h1>Portfolio</h1>
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <div>
-                <img src={img1} alt='Scentimental' />
+            <div className='flex content-center'>
+              <div className='flex'>
+                <Image src={img1} alt='Scentimental' width={400} className='rounded-lg' />
               </div>
+              <div>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Scentimental</div>
                   <p>
-                    Scenti-mental is an ecommerce website that showcases their companies future products for the purpose of feedback before release. 
+                    Scenti-mental is an ecommerce website that showcases their companies future products for the purpose of feedback before release.
                   </p>
                 </div>
                 <div className='flex text-white'>
-                <span>< AiOutlineLink /></span>
+                  <span>< AiOutlineLink /></span>
                   <a>Github</a>
                   <span>< AiOutlineLink /></span>
                   <a>App</a>
@@ -69,7 +71,54 @@ export default function Home() {
                   <span className="inline-block bg-coral bg-opacity-50 rounded-full px-3 py-1 text-sm font-semibold text-red-300 mr-2 mb-2">Handlebars</span>
                   <span className="inline-block bg-coral bg-opacity-50 rounded-full px-3 py-1 text-sm font-semibold text-red-300 mr-2 mb-2">Express.js</span>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <div>
+            <h1>Resume</h1>
+            <p>Front-end web developer with a background in Computer Science. Currently Training at the Rutgers coding boot camp to earn a certificate in full-stack web
+              development. Innovative problem-solver passionate about developing apps; focused on mobile-first design and development. Strengths in creativity, teamwork,
+              and building projects from ideation to execution.
+            </p>
+            <div class="flex flex-col">
+  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+      <div class="overflow-hidden">
+        <table class="min-w-full text-left text-sm font-light">
+          <thead class="border-b font-medium dark:border-neutral-500">
+            <tr>
+              <th scope="col" class="px-6 py-4">#</th>
+              <th scope="col" class="px-6 py-4">Languages</th>
+              <th scope="col" class="px-6 py-4">Databases</th>
+              <th scope="col" class="px-6 py-4">Tools & Frameworks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b dark:border-neutral-500">
+              <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
+              <td class="whitespace-nowrap px-6 py-4">HTML</td>
+              <td class="whitespace-nowrap px-6 py-4">SQL</td>
+              <td class="whitespace-nowrap px-6 py-4">Bootstrap</td>
+            </tr>
+            <tr class="border-b dark:border-neutral-500">
+              <td class="whitespace-nowrap px-6 py-4 font-medium">2</td>
+              <td class="whitespace-nowrap px-6 py-4">CSS3</td>
+              <td class="whitespace-nowrap px-6 py-4">MongoDB</td>
+              <td class="whitespace-nowrap px-6 py-4">Tailwindcss</td>
+            </tr>
+            <tr class="border-b dark:border-neutral-500">
+              <td class="whitespace-nowrap px-6 py-4 font-medium">3</td>
+              <td class="whitespace-nowrap px-6 py-4">JavaScript</td>
+              <td class="whitespace-nowrap px-6 py-4">Wild</td>
+              <td class="whitespace-nowrap px-6 py-4">Next.js</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </section>
 
