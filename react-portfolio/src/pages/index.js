@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub, AiOutlineLink } from 'react-icons/ai'
+import { MdDownload } from 'react-icons/md'
 import img1 from '../../public/images/scentimental-cover.png';
 
 export default function Home() {
@@ -25,9 +26,9 @@ export default function Home() {
             </ul>
           </nav>
           <div>
-            <h2>Ryan Ebanks</h2>
-            <h3>Full-Stack Web Devloper/Software Engineer</h3>
-            <p>
+            <h2 className='text-5xl text-white'>Ryan Ebanks</h2>
+            <h3 className='text-2xl text-white'>Full-Stack Web Devloper/Software Engineer</h3>
+            <p className='text-lg text-white'>
               I create modern yet simplistic applications to solve complex problems. Learn more about me below.
             </p>
             <div className='text-5xl flex gap-16 text-teal'>
@@ -36,8 +37,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h1>About</h1>
-            <p>
+            <h1 className='text-2xl text-white'>About</h1>
+            <p className='text-base text-white'>
               Hi, I'm Ryan Ebanks and I'm a Full-Stack Web Developer in training.
               I have a bachelors degree in computer science which gives me a strong understanding
               of programming funadamentals such as data structures and object-oriented programming (OOPs).
@@ -47,15 +48,15 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h1>Portfolio</h1>
+            <h1 className='text-2xl text-white'>Portfolio</h1>
             <div className='flex content-center'>
               <div className='flex'>
                 <Image src={img1} alt='Scentimental' width={400} className='rounded-lg' />
               </div>
               <div>
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Scentimental</div>
-                  <p>
+                  <div className=" text-white font-bold text-xl mb-2">Scentimental</div>
+                  <p className='text-base text-white'>
                     Scenti-mental is an ecommerce website that showcases their companies future products for the purpose of feedback before release.
                   </p>
                 </div>
@@ -76,52 +77,67 @@ export default function Home() {
           </div>
 
           <div>
-            <h1>Resume</h1>
-            <p>Front-end web developer with a background in Computer Science. Currently Training at the Rutgers coding boot camp to earn a certificate in full-stack web
+            <div>
+              <h1 className='text-2xl text-white'>Resume</h1>
+              <h1 className='text-base text-white'>Download here</h1>
+              <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                < MdDownload />
+                <span>Download</span>
+              </button>
+            </div>
+            <h1 className='text-xl text-white'>Summary</h1>
+            <p className='text-base text-white'>Front-end web developer with a background in Computer Science. Currently Training at the Rutgers coding boot camp to earn a certificate in full-stack web
               development. Innovative problem-solver passionate about developing apps; focused on mobile-first design and development. Strengths in creativity, teamwork,
               and building projects from ideation to execution.
             </p>
-            <div class="flex flex-col">
-  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-    <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-      <div class="overflow-hidden">
-        <table class="min-w-full text-left text-sm font-light">
-          <thead class="border-b font-medium dark:border-neutral-500">
-            <tr>
-              <th scope="col" class="px-6 py-4">#</th>
-              <th scope="col" class="px-6 py-4">Languages</th>
-              <th scope="col" class="px-6 py-4">Databases</th>
-              <th scope="col" class="px-6 py-4">Tools & Frameworks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b dark:border-neutral-500">
-              <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
-              <td class="whitespace-nowrap px-6 py-4">HTML</td>
-              <td class="whitespace-nowrap px-6 py-4">SQL</td>
-              <td class="whitespace-nowrap px-6 py-4">Bootstrap</td>
-            </tr>
-            <tr class="border-b dark:border-neutral-500">
-              <td class="whitespace-nowrap px-6 py-4 font-medium">2</td>
-              <td class="whitespace-nowrap px-6 py-4">CSS3</td>
-              <td class="whitespace-nowrap px-6 py-4">MongoDB</td>
-              <td class="whitespace-nowrap px-6 py-4">Tailwindcss</td>
-            </tr>
-            <tr class="border-b dark:border-neutral-500">
-              <td class="whitespace-nowrap px-6 py-4 font-medium">3</td>
-              <td class="whitespace-nowrap px-6 py-4">JavaScript</td>
-              <td class="whitespace-nowrap px-6 py-4">Wild</td>
-              <td class="whitespace-nowrap px-6 py-4">Next.js</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
+
+            <h2 className='text-xl text-white'>Technical Skills</h2>
+            <p className='text-base text-white'><span className='font-bold'>Software/Platforms:</span></p>
+            <p className='text-base text-white'><span className='font-bold'>Software Languages:</span></p>
+
+            <h2 className='text-xl text-white'>Projects</h2>
+            <p className='text-lg text-white'>Project #1 Template</p>
+            <ul>
+              <li className='text-base text-white'></li>
+              <li className='text-base text-white'></li>
+              <li className='text-base text-white'></li>
+            </ul>
+            <p className='text-lg text-white'>Project #2 Template</p>
+            <ul>
+              <li className='text-base text-white'></li>
+              <li className='text-base text-white'></li>
+              <li className='text-base text-white'></li>
+            </ul>
+
+            <h2 className='text-xl text-white'>Education</h2>
+            <p className='text-base text-white'><span className='font-bold'>Program: </span>Rutgers Full-Stack Coding Bootcamp, Online</p>
+            <p className='text-base text-white'>December 2022 - June 2023</p>
+            <p className='text-base text-white'><span className='font-bold'>Degree: </span>University of Technology, Kingston, Jamaica</p>
+            <p className='text-base text-white'>August 2017 - November 2021</p>
           </div>
         </section>
 
+        <section>
+          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" class="space-y-8">
+              <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+              </div>
+              <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              </div>
+              <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+          </div>
+        </section>
       </main>
     </>
   );
