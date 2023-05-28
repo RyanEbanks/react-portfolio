@@ -6,31 +6,10 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 
-function App() {
-  return (
-    <>
-      <main className='bg-space px-10'>
-        <section className='px-10'>
-          <Navigation />
-        </section>
-        <section className='px-10'>
-          <About />
-        </section>
-        <section className='px-10 max-w-[80%] m-auto'>
-          <Project />
-        </section>
-        <section className='px-10'>
-          <Contact />
-        </section>
-        <section className='px-10'>
-          <Resume />
-        </section>
-        <section className='px-10'>
-          <Footer />
-        </section>
-      </main>
-    </>
-  );
-}
+import React from "react";
+import Home from "./Home";
+import './App.css';
+
+const App = () => <Home />;
 
 export default App;
