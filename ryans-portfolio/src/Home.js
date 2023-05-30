@@ -51,7 +51,7 @@ function Home() {
 
     return (
         <>
-            <main className='bg-space px-10'>
+            <main className='bg-gray-950 px-10'>
                 <section className='px-10'>
                     {/* here we are passing the currentPage from state to the function to update it */}
                     <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />

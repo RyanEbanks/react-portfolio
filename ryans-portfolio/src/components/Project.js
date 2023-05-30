@@ -5,7 +5,7 @@ import img2 from '../images/e-commerce.jpg';
 
 export function Project() {
     return (
-        <>
+        <div className='mb-8'>
             <h1 className='text-5xl text-white font-sans text-center mt-10 mb-10'>Portfolio</h1>
             <section className='full-section flex'>
                 <section className='section-1 w-1/2'>
@@ -72,7 +72,7 @@ export function Project() {
                 </section>
             </section>
 
-        </>
+        </div>
     );
 }
 
