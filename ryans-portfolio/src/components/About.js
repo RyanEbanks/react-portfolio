@@ -4,8 +4,9 @@ import profile from '../images/profile-placeholder.png'
 
 export function About() {
     return (
-        <div className='h-screen w-100'>
-            <div className='flex mb-10'>
+        <div className='h-screen'>
+        <div className='w-100'>
+            <div className='flex'>
                 <div className='flex-wrap w-3/5 mx-auto my-auto'>
                     <div className='flex-col'>
                         <h2 className='text-5xl text-white font-sans font-bold'>Ryan Ebanks</h2>
@@ -17,8 +18,8 @@ export function About() {
                             Learn more about me below.
                         </p>
                         <div className='text-5xl mt-5 flex gap-6 text-slate-400'>
-                            <a href='https://www.linkedin.com/in/ryan-ebanks-752a92169/' className='hover:text-red-400' target="_blank"><AiFillLinkedin /></a>
-                            <a href='https://github.com/RyanEbanks' className='hover:text-red-400' target="_blank"><AiFillGithub /></a>
+                            <a href='https://www.linkedin.com/in/ryan-ebanks-752a92169/' className='hover:text-white' target="_blank"><AiFillLinkedin /></a>
+                            <a href='https://github.com/RyanEbanks' className='hover:text-white' target="_blank"><AiFillGithub /></a>
                         </div>
                     </div>
                 </div>
@@ -27,10 +28,10 @@ export function About() {
                     <img src={profile} alt='Profile Picture' width={400} className='rounded-lg' />
                 </div>
             </div>
+        </div>
 
-
-            <div className='mt-20'>
-                <h1 className='text-5xl text-white font-sans text-center mt-10 mb-10'>About</h1>
+            <div className='my-auto w-2/3 mx-auto'>
+                <h1 className='text-5xl text-white font-bold font-sans text-center mt-10 mb-10'>About</h1>
                 <p className='text-2xl text-slate-400 font-sans mt-2 text-center'>
                     Hi, I'm <span className='text-white'>Ryan Ebanks</span> and I'm a Full-Stack Web Developer in training.
                     I have a <span className='text-white'>bachelors</span> degree in <span className='text-white'></span>computer science which gives me a strong understanding

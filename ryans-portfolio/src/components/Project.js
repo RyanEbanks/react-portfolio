@@ -5,8 +5,8 @@ import img2 from '../images/e-commerce.jpg';
 
 export function Project() {
     return (
-        <div className='mb-8'>
-            <h1 className='text-5xl text-white font-sans text-center mt-10 mb-10'>Portfolio</h1>
+        <div className='my-10'>
+            <h1 className='text-5xl text-white font-bold font-sans text-center mt-10 mb-10'>Portfolio</h1>
             <section className='full-section flex'>
                 <section className='section-1 w-1/2'>
 
@@ -24,10 +24,15 @@ export function Project() {
                             </p>
                         </div>
                         <div className='flex text-slate-400 ml-5 text-xl'>
-                            <span>< AiOutlineLink /></span>
-                            <a>Github</a>
-                            <span>< AiOutlineLink /></span>
-                            <a>App</a>
+                            <a className='flex-row mr-4'>
+                                <AiOutlineLink className="inline-block w-6 h-6 mr-0.5" />
+                                Github
+                            </a>
+                            <a className='flex-row'>
+                                <AiOutlineLink className="inline-block w-6 h-6 mr-0.5" />
+                                App
+                            </a>
+
                         </div>
                         <div className="px-6 pt-4 pb-2">
                             <span className="inline-block bg-red-400/10 rounded-full px-3 py-1 text-xl  text-red-300 mr-2 mb-2">JavaScript</span>
@@ -49,10 +54,15 @@ export function Project() {
                             </p>
                         </div>
                         <div className='flex text-slate-400 ml-5 text-xl'>
-                            <span>< AiOutlineLink /></span>
-                            <a>Github</a>
-                            <span>< AiOutlineLink /></span>
-                            <a>App</a>
+                            <a className='flex-row mr-4'>
+                                <AiOutlineLink className="inline-block w-6 h-6 mr-0.5" />
+                                Github
+                            </a>
+                            <a className='flex-row'>
+                                <AiOutlineLink className="inline-block w-6 h-6 mr-0.5" />
+                                App
+                            </a>
+
                         </div>
                         <div className="px-6 pt-4 pb-2">
                             <span className="inline-block bg-red-400/10 rounded-full px-3 py-1 text-xl  text-red-300 mr-2 mb-2">JavaScript</span>

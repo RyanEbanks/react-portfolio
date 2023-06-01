@@ -51,12 +51,12 @@ function Home() {
 
     return (
         <>
-            <main className='bg-gray-950 px-10'>
-                <section className='px-10'>
+            <main className='bg-gray-950'>
+                <section>
                     {/* here we are passing the currentPage from state to the function to update it */}
-                    <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+                    <div className='px-10'><Navigation currentPage={currentPage} handlePageChange={handlePageChange} /></div>
                     {/* Here we are calling the render page method to return the component */}
-                    {renderPage()}
+                    <div className='px-10'>{renderPage()}</div>
                     <Footer />
                 </section>
             </main>
