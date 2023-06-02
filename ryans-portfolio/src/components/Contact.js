@@ -4,7 +4,8 @@ import React from 'react';
 export function Contact() {
   return (
     <>
-      <section className='mt-10'>
+     <div className='h-screen'>
+      <section className='pt-20'>
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 tracking-tight text-5xl font-bold text-center text-white">Contact Us</h2>
           <p class="mb-8 lg:mb-16 font-light text-center text-slate-400 dark:text-gray-400 text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
@@ -21,6 +22,7 @@ export function Contact() {
           </form>
         </div>
       </section>
+      </div>
     </>
   );
 }

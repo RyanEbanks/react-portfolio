@@ -5,8 +5,8 @@ import img2 from '../images/e-commerce.jpg';
 
 export function Project() {
     return (
-        <div className='my-10'>
-            <h1 className='text-5xl text-white font-bold font-sans text-center mt-10 mb-10'>Portfolio</h1>
+        <div className='py-10 '>
+            <h1 className='text-5xl text-white font-bold font-sans text-center mt-40 mb-10'>Portfolio</h1>
             <section className='full-section flex'>
                 <section className='section-1 w-1/2'>
 
