@@ -37,7 +37,13 @@ module.exports = {
         colorCSS: "#1572B6",
         colorJS: "#F7DF1E",
         colorMySQL: "#4479A1",
-      }
+      },
+      spacing: {
+        '23': '6rem',
+        '28': '7rem',
+        '32': '8rem', 
+        
+      },
     },
   },
   plugins: [],
