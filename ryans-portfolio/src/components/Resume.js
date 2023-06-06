@@ -17,8 +17,8 @@ export function Resume() {
             <div className='flex flex-row'>
               <h1 className='text-lg text-white'>Download here:</h1>
               {/* NOTE: Resume is not downloading properly */}
-              <a href='../documents/RyanEbanksResume.docx' download="RyanEbanksResume.docx">
-              <button class="flex items-center bg-red-400 hover:bg-red-500 text-white py-1 px-4 rounded shadow ml-4">
+              <a href='../../public/RyanEbanksResume.docx' download="RyanEbanksResume.docx">
+              <button class="flex items-center bg-red-500 hover:bg-red-600 text-white py-1 px-4 rounded shadow ml-4">
                 <MdDownload className="mr-1" />
                 <span>Resume</span>
               </button> 
@@ -100,14 +100,16 @@ export function Resume() {
           <hr class="my-8 border-t-1 border-slate-400" />
 
           <h2 className='text-3xl text-white text-center mt-10 mb-10'>Projects</h2>
-          <p className='text-xl text-white'>Project #1 Template</p>
+          <p className='text-xl text-white'>Sypherlink |  <span className="inline-block rounded px-3 py-1 text-xl  bg-red-500 hover:bg-red-600 text-white mr-2 mb-2"><a href='https://github.com/X-A-gif/SypherLink'>View Github</a></span> 
+          <span className="inline-block rounded px-3 py-1 text-xl  bg-red-500 hover:bg-red-600 text-white mr-2 mb-2"><a href=''>View App</a></span></p>
           <ul>
-            <li className='text-xl text-gray-200'>To be added</li>
-            <li className='text-xl text-gray-200'>To be added</li>
-            <li className='text-xl text-gray-200'>To be added</li>
+            <li className='ml-5 list-disc text-xl text-gray-200'>SypherLink is a full stack live chat app follwoing the MERN standards for full-stack development.</li>
+            <li className='ml-5 list-disc text-xl text-gray-200'>Worked with a team to incorporate the MERN Full-Stack guidelines.</li>
+            <li className='ml-5 list-disc text-xl text-gray-200'>MongoDB, Express.js, React, Node.js, Tailwind.css, Socket.io.</li>
           </ul>
           <hr class="my-8 border-t-1 border-slate-400" />
-          <p className='text-xl text-white'>Scent-imental | <span className='text-right'><a href='https://github.com/RyanEbanks/scent-imental'>View github</a> | <a href='https://frozen-brushlands-88801.herokuapp.com/'>View App</a></span></p>
+          <p className='text-xl text-white'>Scent-imental |  <span className="inline-block rounded px-3 py-1 text-xl  bg-red-500 hover:bg-red-600 text-white mr-2 mb-2"><a href='https://github.com/RyanEbanks/scent-imental'>View Github</a></span> 
+          <span className="inline-block rounded px-3 py-1 text-xl  bg-red-500 hover:bg-red-600 text-white mr-2 mb-2"><a href='https://frozen-brushlands-88801.herokuapp.com/'>View App</a></span></p>
           <ul>
             <li className='ml-5 list-disc text-xl text-gray-200'>Scentimental is my first full-stack web development project following the express.js mvc framework.</li>
             <li className='ml-5 list-disc text-xl text-gray-200'>Worked with a team to incorporate continuous integration. I was tasked with setting up the server, server-side controllers along with the front-end.</li>

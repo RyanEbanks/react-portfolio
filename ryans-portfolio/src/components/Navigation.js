@@ -3,7 +3,6 @@ import Logo from '../images/logo';
 
 export function Navigation({ currentPage, handlePageChange }) {
   return (
-    // <nav className="bg-opacity-50 bg-gray-950 backdrop-filter backdrop-blur-sm fixed top-0 left-0 right-0 z-10" style={{ height: '90px' }}>
     <nav className="bg-opacity-50 bg-gray-950 lg:group-hover:bg-gray-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg fixed top-0 left-0 right-0 z-10" style={{ height: '90px' }}>
       <div className="py-1 container mx-auto px-4 flex">
         <div className="flex items-center">
