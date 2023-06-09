@@ -16,8 +16,8 @@ export function Project() {
                 </section>
 
                 <section className='section-2 w-1/2 m-auto px-10'>
-                    <div className=' proj-description hover:bg-white hover:bg-opacity-5 hover:border hover:border-white/10 hover:rounded-lg hover:shadow-lg hover:scale-100 transition-transform duration-300 py-4 px-4'>
-
+                    <div className=' proj-description hover:bg-white hover:bg-opacity-5 hover:border hover:border-white/10 hover:rounded-lg hover:shadow-lg hover:scale-100 transition-transform duration-300 py-4 px-4 w-200 h-200'>
+        
                         <div className="px-6 py-4">
                             <div className=" text-white font-bold text-3xl mb-2">Scentimental</div>
                             <p className='text-xl text-slate-400'>
@@ -47,7 +47,7 @@ export function Project() {
             </section>
             <section className='full-section flex'>
                 <section className='section-1 w-1/2 m-auto px-10'>
-                    <div className='proj-description hover:bg-white hover:bg-opacity-5 hover:border hover:border-white/10 hover:rounded-lg hover:shadow-lg hover:scale-100 transition-transform duration-300 py-4 px-4'>
+                    <div className='proj-description hover:bg-white hover:bg-opacity-5 hover:border hover:border-white/10 hover:rounded-lg hover:shadow-lg hover:scale-100 transition-transform duration-300 py-4 px-4 w-200 h-200'>
                         <div className="px-6 py-4">
                             <div className=" text-white font-bold text-3xl mb-2">Emporify-Tech</div>
                             <p className='text-slate-400 text-xl'>

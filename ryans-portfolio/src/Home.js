@@ -5,6 +5,7 @@ import Project from './components/Project';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function Home() {
     const [currentPage, setCurrentPage] = useState('About');
@@ -14,7 +15,7 @@ function Home() {
         if (currentPage === 'About') {
             return (
                 <>
-                    <About />
+                    <About key='about' />
                 </>
 
             );
@@ -22,7 +23,7 @@ function Home() {
         if (currentPage === 'Project') {
             return (
                 <>
-                    <Project />
+                    <Project key='project' />
                 </>
 
             );
@@ -30,7 +31,7 @@ function Home() {
         if (currentPage === 'Resume') {
             return (
                 <>
-                    <Resume />
+                    <Resume key='resume' />
                 </>
 
             );
@@ -38,7 +39,7 @@ function Home() {
         if (currentPage === 'Contact') {
             return (
                 <>
-                    <Contact />
+                    <Contact key='contact' />
                 </>
 
             );
@@ -51,17 +52,25 @@ function Home() {
 
     return (
         <>
-            <main className='bg-gray-950'>
-                <section>
-                    {/* here we are passing the currentPage from state to the function to update it */}
-                    <div className='px-10'><Navigation currentPage={currentPage} handlePageChange={handlePageChange} /></div>
-                    {/* Here we are calling the render page method to return the component */}
-                    <div className='px-10'>{renderPage()}</div>
-                    <Footer />
-                </section>
-            </main>
+          <main className="bg-gray-950">
+            <section>
+              <div className="px-10">
+                <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+              </div>
+              <div className="px-10">
+                <AnimatePresence>
+                  {currentPage && (
+                    <motion.div key={currentPage} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                      {renderPage()}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+              <Footer />
+            </section>
+          </main>
         </>
-    );
-}
+      );
+    }
 
 export default Home;

@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from '../images/logo';
+import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 
 export function Navigation({ currentPage, handlePageChange }) {
   return (
@@ -10,16 +12,44 @@ export function Navigation({ currentPage, handlePageChange }) {
         </div>
         <ul className="flex ml-auto pt-10">
           <li>
-            <a href="#home" onClick={() => handlePageChange('About')} className={`text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4 ${currentPage === 'About'}`}>Home</a>
+            <NavLink
+              to="/about"
+              activeClassName="text-red-400 border-b-2 border-red-400 pb-5"
+              className="text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4"
+              onClick={() => handlePageChange('About')}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="#projects" onClick={() => handlePageChange('Project')} className={`text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4 ${currentPage === 'Project'}`}>Projects</a>
+            <NavLink
+              to="/projects"
+              activeClassName="text-red-400 border-b-2 border-red-400 pb-5"
+              className="text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4"
+              onClick={() => handlePageChange('Project')}
+            >
+              Projects
+            </NavLink>
           </li>
           <li>
-            <a href="#contact" onClick={() => handlePageChange('Contact')} className={`text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4 ${currentPage === 'Contact'}`}>Contact</a>
+            <NavLink
+              to="/contact"
+              activeClassName="text-red-400 border-b-2 border-red-400 pb-5"
+              className="text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4"
+              onClick={() => handlePageChange('Contact')}
+            >
+              Contact
+            </NavLink>
           </li>
           <li>
-            <a href="#resume" onClick={() => handlePageChange('Resume')} className={`text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4 ${currentPage === 'Resume'}`}>Resume</a>
+            <NavLink
+              to="/resume"
+              activeClassName="text-red-400 border-b-2 border-red-400 pb-5"
+              className="text-white text-lg hover:text-red-400 hover:border-b-2 hover:border-red-400 hover:pb-5 mx-4"
+              onClick={() => handlePageChange('Resume')}
+            >
+              Resume
+            </NavLink>
           </li>
         </ul>
       </div>
