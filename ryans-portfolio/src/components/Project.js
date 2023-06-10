@@ -35,7 +35,7 @@ export function Project() {
                                 </p>
                             </div>
                             <div className='flex text-slate-400 ml-5 text-xl'>
-                                <a href='https://github.com/RyanEbanks/scent-imental' className='flex-row mr-4 hover:text-white' target='_blank' >
+                                <a href='https://github.com/RyanEbanks/scent-imental' className='flex-row mr-4 hover:text-white' target='_blank' rel="noreferrer">
                                     <AiOutlineLink className="inline-block w-6 h-6 mr-0.5" />
                                     Github
                                 </a>
