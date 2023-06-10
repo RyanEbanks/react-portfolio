@@ -136,12 +136,11 @@ export function Resume() {
 
             <h2 className='text-2xl md:text-3xl text-white text-center mt-5 md:mt-10 mb-5 md:mb-10'>Education</h2>
             <h3 className='text-xl md:text-2xl text-white text-center mb-3'>Rutgers University | New Brunswick, NJ</h3>
-            <p className='text-lg md:text-xl text-gray-200 text-center'>Certificate in Full-Stack Web Development | Expected May 2023</p>
+            <p className='text-lg md:text-xl text-gray-200 text-center'>Certificate in Full-Stack Web Development | Expected June 2023</p>
             <hr className="my-5 md:my-8 border-t-1 border-slate-400" />
 
-            <h2 className='text-2xl md:text-3xl text-white text-center mt-5 md:mt-10 mb-5 md:mb-10'>Experience</h2>
-            <h3 className='text-xl md:text-2xl text-white text-center mb-3'>ABC Company | Anytown, USA</h3>
-            <p className='text-lg md:text-xl text-gray-200 text-center'>Web Developer | January 2022 - Present</p>
+            <h3 className='text-xl md:text-2xl text-white text-center mb-3'>University of Technology | Kingston, Jamaica</h3>
+            <p className='text-lg md:text-xl text-gray-200 text-center'>BSc Computer Science | August 2017 - November 2021</p>
           </div>
         </div>
       </div>

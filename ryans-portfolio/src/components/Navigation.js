@@ -56,7 +56,7 @@ export function Navigation({ currentPage, handlePageChange }) {
         <ul
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } lg:block lg:flex ml-auto pt-10`}
+          } lg:flex ml-auto pt-10`}
         >
           <li>
             <NavLink
