@@ -4,7 +4,7 @@ My new updated portfolio using React
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Deployed Application Link
-[Click Here!]()
+[Click Here!](https://github.com/RyanEbanks/react-portfolio)
 
 ## Description
 This text editor is a single-page application that meets the progressive web app criteria. This application features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
