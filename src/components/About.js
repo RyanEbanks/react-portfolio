@@ -69,6 +69,7 @@ export function About() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6 }}
                         >
+                            <div className='bg-gray-950'>
                             <div className="mt-23 bg-white bg-opacity-5 border border-white/10 rounded-lg shadow-lg transition-transform duration-300 py-10 px-4">
                                 <div className="mb-auto w-2/3 mx-auto">
                                     <h1 className="text-5xl text-white font-bold font-sans text-center mt-2 mb-10">About</h1>
@@ -83,6 +84,7 @@ export function About() {
                                         approach. I'm currently enrolled in the <span className="text-white">Rutgers Full-Stack Coding Bootcamp</span> to harness my skills.
                                     </p>
                                 </div>
+                            </div>
                             </div>
                         </motion.div>
                     ) : null}
