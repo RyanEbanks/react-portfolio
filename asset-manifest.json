@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.d2bffe80.css",
-    "main.js": "/react-portfolio/static/js/main.c80fa6b5.js",
+    "main.css": "/react-portfolio/static/css/main.e92f5cb5.css",
+    "main.js": "/react-portfolio/static/js/main.effb53a7.js",
     "static/media/IMG_2014.png": "/react-portfolio/static/media/IMG_2014.5d3167eef53de60258dd.png",
     "static/media/scentimental-cover.png": "/react-portfolio/static/media/scentimental-cover.4ad39d2adeb0ae32513a.png",
     "static/media/e-commerce.jpg": "/react-portfolio/static/media/e-commerce.a41b954154aceff61c68.jpg",
@@ -9,12 +9,13 @@
     "static/media/pwa-background.png": "/react-portfolio/static/media/pwa-background.3712ee65607ec2e58071.png",
     "static/media/readme-background.png": "/react-portfolio/static/media/readme-background.70886e57d62a09423fea.png",
     "static/media/note-taker-background.png": "/react-portfolio/static/media/note-taker-background.f703206e710500767b24.png",
+    "static/media/sypherlink-background.png": "/react-portfolio/static/media/sypherlink-background.65b7c6e46346da84d265.png",
     "index.html": "/react-portfolio/index.html",
-    "main.d2bffe80.css.map": "/react-portfolio/static/css/main.d2bffe80.css.map",
-    "main.c80fa6b5.js.map": "/react-portfolio/static/js/main.c80fa6b5.js.map"
+    "main.e92f5cb5.css.map": "/react-portfolio/static/css/main.e92f5cb5.css.map",
+    "main.effb53a7.js.map": "/react-portfolio/static/js/main.effb53a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2bffe80.css",
-    "static/js/main.c80fa6b5.js"
+    "static/css/main.e92f5cb5.css",
+    "static/js/main.effb53a7.js"
   ]
 }
